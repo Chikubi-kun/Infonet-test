@@ -4,15 +4,15 @@
 </template>
 
 <script>
+import { onMounted } from "vue";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { onMounted } from "vue";
 
 //lokasi yang diberikan
 var markers = [
-    { lat: -6.960848, lng: 107.966894 },
-    { lat: 82.587825, lng: 21.895907 }
-]
+        { "lat": -6.960848, "lng": 107.966894 },
+        { "lat": 82.587825, "lng": 21.895907 }
+    ]
 
 export default {
     setup() {
@@ -25,13 +25,12 @@ export default {
             });
  
             map.on('load', () => {
-                //load markers
-                new mapboxgl.Marker({color: "red"})
-                    .setLngLat([markers[0].lng, markers[0].lat])
-                    .addTo(map);
-                new mapboxgl.Marker({color: "red"})
-                    .setLngLat([markers[1].lng, markers[1].lat])
-                    .addTo(map);
+                // load markers
+                markers.forEach(marker => {
+                    new mapboxgl.Marker({color: "red"})
+                        .setLngLat([marker.lng, marker.lat])
+                        .addTo(map);
+                })
                 
                 //zoom out agar kedua marker kelihatan
                 map.setZoom(1);

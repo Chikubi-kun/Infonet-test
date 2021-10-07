@@ -1,4 +1,5 @@
 # infonet-test
+TO-DO : Google Sign-In, CRUD
 
 ## Project setup
 ```
