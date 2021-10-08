@@ -1,19 +1,29 @@
 {
-	"customers": [
-		{ 
-			"nama": "John Doe",
-			"jabatan": "Manager",
-			"gender": "M"
-		}, 
-		{ 
-			"nama": "Jane Doe",
-			"jabatan": "Purchasing Staff",
-			"gender": "F"
-		}, 
-		{ 
-			"nama": "Bruce Wayne",
-			"jabatan": "Supervisor",
-			"gender": "M"
-		} 
-	]
+  "customers": [
+    {
+      "nama": "John Doe",
+      "jabatan": "Manager",
+      "gender": "M"
+    },
+    {
+      "nama": "Jane Doe",
+      "jabatan": "Purchasing Staff",
+      "gender": "F"
+    },
+    {
+      "nama": "Bruce Wayne",
+      "jabatan": "Supervisor",
+      "gender": "M"
+    },
+    {
+      "nama": "James Bond",
+      "jabatan": "Junior Developer",
+      "gender": "M"
+    },
+    {
+      "nama": "Mary Jane",
+      "jabatan": "Marketing",
+      "gender": "F"
+    }
+  ]
 }
