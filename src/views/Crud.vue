@@ -12,7 +12,7 @@
                     </button>
                 </div>
                 <div>
-                    <form @submit.prevent="add">
+                    <form>
                         <div class="modal-body">
                              <div class="form-group">
                                 <input
@@ -57,9 +57,10 @@
                                 @click="update(form)"
                                 data-dismiss="modal">Update</button>
                             <button
-                                type="submit"
+                                type="button"
                                 class="btn btn-primary"
                                 v-show="!updateSubmit"
+                                @click="add()"
                                 data-dismiss="modal">Add</button>
                         </div>
                     </form>
